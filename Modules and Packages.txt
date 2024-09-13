@@ -1,0 +1,43 @@
+from wordcloud import WordCloud
+
+import numpy as np 
+
+import pandas as pd
+
+from sklearn.model_selection import train_test_split
+
+!pip install neattext
+
+import neattext.functions as nfx
+
+import matplotlib.pyplot as plt
+
+import plotly.express as plx
+
+from sklearn.metrics import classification_report
+
+import keras
+
+from keras.layers import Embedding,Dense,LSTM,Bidirectional,GlobalMaxPooling1D,Input,Dropout
+
+from keras.callbacks import EarlyStopping,ReduceLROnPlateau
+
+from keras.models import Sequential
+
+import tensorflow as tf
+
+from sklearn.preprocessing import LabelEncoder
+
+from keras.preprocessing.text import Tokenizer
+
+from keras.preprocessing.sequence import pad_sequences
+
+from tqdm import tqdm
+
+import seaborn as sns
+
+import pickle
+
+import warnings
+
+warnings.filterwarnings('ignore')
